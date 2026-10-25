@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - BlogSpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">BlogSpace<span>.</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-blog.html" class="nav-button">+ Create Blog</a>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <section class="dashboard-heading">
+            <div>
+                <p class="eyebrow">YOUR WORKSPACE</p>
+                <h1>My Dashboard</h1>
+                <p>Manage your stories and share new ideas.</p>
+            </div>
+            <a href="create-blog.html" class="primary-button">
+                + Create New Blog
+            </a>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <p>Total Blogs</p>
+                <h2 id="totalBlogs">0</h2>
+            </div>
+            <div class="stat-card">
+                <p>Welcome</p>
+                <h2>Writer 👋</h2>
+            </div>
+        </section>
+
+        <section class="my-blogs">
+            <h2>My Blogs</h2>
+            <div id="myBlogs" class="blog-grid"></div>
+            <p id="emptyMessage">You haven't created any blogs yet.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 BlogSpace. Made with care.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
